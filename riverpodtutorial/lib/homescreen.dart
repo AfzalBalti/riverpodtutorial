@@ -16,7 +16,11 @@ class HomeScreen extends ConsumerWidget {
   Widget build(BuildContext context, WidgetRef ref) {
     print('build');
     return Scaffold(
-      appBar: AppBar(title: Text('Counter App')),
+      appBar: AppBar(
+          title: Text(
+        'Counter App with riverpod first change',
+        style: TextStyle(color: Colors.red),
+      )),
       body: Column(
         children: [
           Consumer(builder: (context, ref, child) {
